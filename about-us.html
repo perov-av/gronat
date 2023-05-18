@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gronat</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Шапка сайта -->
+      <header>
+        <div class="header_container gr_container">
+          <div class="header__logo">
+            <a class="header__logo-img" href="index.html">
+              <img src="img/logo.svg" alt="Логотип Gronat" class="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <div class="header__logo hidden">
+              <a class="header__logo-img" href="index.html">
+                <img src="img/logo.svg" alt="Логотип Gronat" class="logo" />
+              </a>
+            </div>
+            <ul class="nav__menu">
+              <li class="nav__menu-item"><a href="catalog.html"> Каталог </a></li>
+              <li class="nav__menu-item active"><a href="about-us.html"> О нас </a></li>
+              <li class="nav__menu-item"><a href="delivery.html"> Доставка </a></li>
+            </ul>
+            <div class="hidden">
+              <a href="#" class="btn form_click">Есть вопросы?</a>
+            </div>
+          </nav>
+
+          <div class="header__right">
+            <a class="header__right-tel" href="tel:+79062174804"
+              >8-906-217-48-04</a
+            >
+            <div class="header__right-btn">
+              <a href="#" class="btn form_click">Есть вопросы?</a>
+            </div>
+          </div>
+          <div class="toggle"></div>
+        </div>
+      </header>
+      <!-- END Шапка сайта -->
+
+      <!-- Основной контент Главной -->
+      <main>
+
+				<!-- Первый раздел О нас -->
+        <section class="about">
+					<div class="gr_container">
+						<h2 class="about__title">
+							Способы доставки
+						</h2>
+						<p class="about__text">
+							Мы подобрали лучшие варианты доставки для вас.
+							С другой стороны дальнейшее развитие различных форм деятельности 
+							в значительной степени обуславливает создание соответствующий условий 
+							активизации. 
+							Товарищи! постоянное информационно-пропагандистское 
+							обеспечение нашей деятельности представляет собой интересный 
+							эксперимент проверки существенных финансовых и административных 
+							условий. Не следует, однако забывать, что укрепление и развитие структуры 
+							обеспечивает широкому кругу (специалистов) участие в формировании 
+							новых предложений.
+						</p>
+						<div class="about__map">
+							<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/zimniy_dvorets/7843287595/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Зимний дворец</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/museum/184105894/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Музей в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Достопримечательность в Санкт‑Петербурге</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.328109%2C59.939582&mode=search&oid=7843287595&ol=biz&z=14.43" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+						</div>
+					</div>
+				</section>
+				<section class="who-are">
+					<div class="gr_container">
+						<div class="who-are__wrap">
+							<div class="who-are__img">
+								<img src="img/whoare.jpg" alt="Кто мы">
+							</div>
+							<div class="who-are__content">
+								<h3 class="who-are__content-title">
+									Кто мы?
+								</h3>
+								<p class="who-are__content-text">
+									Мы подобрали лучшие варианты 
+									доставки для вас.
+									С другой стороны дальнейшее развитие 
+									различных форм деятельности 
+									в значительной степени обуславливает 
+									создание соответствующий условий 
+									активизации. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+				<!-- Скрытая форма обратной связи -->
+        <section class="contact form_toggle">
+          <div class="gr_container contact-wrap">
+            <div class="contact__img">
+              <img src="img/contact__img.jpg" alt="Фото на форме">
+            </div>
+            <div class="contact__form">
+              <div class="contact__form-toggle close"></div>
+              <h2 class="contact__form-title">
+                Есть вопросы? Пишите!
+              </h2>
+              <p class="contact__form-text">
+                Заполните поля ниже для получения обратной связи:
+              </p>
+              <form class="main-form" action="#" name="main-form">
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Электронная почта">
+						    <input type="tel" placeholder="Телефон">
+                <textarea id="#" cols="30" rows="5" placeholder="Ваше сообщение"></textarea>
+                <button type="submit" class="btn btn-wp close">Отправить</button>
+              </form>
+            </div>
+          </div>
+
+        </section>
+      </main>
+      <!-- END main -->
+
+      <!-- Подвал сайта -->
+      <footer class="footer gr_container">
+        <div class="footer__wrap-left">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <a class="footer__contacts-tel" href="tel:+79062174804"
+              >8-906-217-48-04</a
+            >
+            <a class="footer__contacts-mail" href="mailto:gronat2020@yandex.ru"
+              >gronat2020@yandex.ru</a
+            >
+          </div>
+          <div class="footer__about">
+            <h3 class="footer__title">О нас</h3>
+            <a class="footer__about-link" href="#">Кто мы?</a>
+            <a class="footer__about-link" href="delivery.html">Доставка</a>
+          </div>
+        </div>
+        <div class="footer__wrap-soc">
+          <a href="#" class="footer-soc"
+            ><img src="img/VK.svg" alt="ВКонтакте"
+          /></a>
+          <a href="#" class="footer-soc"
+            ><img src="img/YouTube.svg" alt="YouTube"
+          /></a>
+          <a href="#" class="footer-soc"
+            ><img src="img/Telegram.svg" alt="Telegram"
+          /></a>
+        </div>
+      </footer>
+
+      <!-- END Подвал сайта -->
+    </div>
+
+    <script src="js/jQuery.v3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

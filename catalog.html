@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gronat</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Шапка сайта -->
+      <header>
+        <div class="header_container gr_container">
+          <div class="header__logo">
+            <a class="header__logo-img" href="index.html">
+              <img src="img/logo.svg" alt="Логотип Gronat" class="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <div class="header__logo hidden">
+              <a class="header__logo-img" href="index.html">
+                <img src="img/logo.svg" alt="Логотип Gronat" class="logo" />
+              </a>
+            </div>
+            <ul class="nav__menu">
+              <li class="nav__menu-item active">
+                <a href="catalog.html"> Каталог </a>
+              </li>
+              <li class="nav__menu-item">
+                <a href="about-us.html"> О нас </a>
+              </li>
+              <li class="nav__menu-item">
+                <a href="delivery.html"> Доставка </a>
+              </li>
+            </ul>
+            <div class="hidden">
+              <a href="#" class="btn form_click">Есть вопросы?</a>
+            </div>
+          </nav>
+
+          <div class="header__right">
+            <a class="header__right-tel" href="tel:+79062174804"
+              >8-906-217-48-04</a
+            >
+            <div class="header__right-btn">
+              <a href="#" class="btn form_click">Есть вопросы?</a>
+            </div>
+          </div>
+          <div class="toggle"></div>
+        </div>
+      </header>
+      <!-- END Шапка сайта -->
+
+      <!-- Основной контент Главной -->
+      <main>
+        <section class="catalog">
+          <div class="gr_container">
+            <div class="catalog__wrap">
+              <aside class="catalog__sidebar">
+                <div class="catalog__sidebar-wrap">
+                  <div class="catalog__sidebar-title">
+                    <a class="sidebar-title" data-filter=".predm-inter" href="#">Предметы интерьера</a>
+                    <div class="catalog__sidebar-item">
+                      <button class="sidebar-item" type="button" data-filter=".mebel" href="#">Мебель</button>
+                      <button class="control sidebar-item" type="button" data-filter=".detmebel" href="#">Детская мебель</button>
+                    </div>
+                  </div>
+                  <div class="catalog__sidebar-title controls">
+                    <button class="control sidebar-title" type="button" data-filter=".dekor" href="#">Декор</button>
+                    <div class="catalog__sidebar-item controls">
+                      <button class="control sidebar-item" type="button" data-filter=".pano" href="#">Панно</button>
+                      <button class="control sidebar-item" type="button" data-filter=".novdekor" href="#">Новогодний декор</button>
+                      <button class="control sidebar-item" type="button" data-filter="" href="#">Оформление интерьера</button>
+                      <button class="control sidebar-item" type="button" data-filter=".hranen" href="#">Хранение</button>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <div class="catalog__content-wrap">
+                <div class="catalog__content-sort">
+                  <div class="content-sort-title">СОРТИРОВКА:</div>
+                  <div class="content-sort-item active" id="price_up">
+                    <a href="#" >ПО ЦЕНЕ возв.</a>
+                  </div>
+                  <div class="content-sort-item" id="price_low">
+                    <a href="#" >ПО ЦЕНЕ убыв.</a>
+                  </div>
+                  <div class="content-sort-item"><a href="#">ПО ТИПУ</a></div>
+                  <div class="content-sort-item" id="rate_low">
+                    <a href="#">ПО РЕЙТИНГУ</a>
+                  </div>
+                </div>
+                <div id="catalog" class="catalog__content-items">
+                  <div class="mix mebel predm-inter catalog__content-item" data-price="100" data-rate="1">
+                      <a href="single-product.html">
+                      <div class="item-img">
+                        <img src="img/product3.jpg" alt="" />
+
+                        <div class="item-img-shape">
+                          <img src="img/Shape.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="item-title"><h3>Тест ТТТ</h3></div>
+                      <div class="item-price">100 руб.</div>
+                    </a>
+                  </div>
+                  <div class="mix catalog__content-item detmebel predm-inter" data-price="500" data-rate="7">
+                      <a href="single-product.html">
+                      <div class="item-img">
+                        <img src="img/product2.jpg" alt="" />
+
+                        <div class="item-img-shape">
+                          <img src="img/Shape.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="item-title"><h3>Название товара</h3></div>
+                      <div class="item-price">500 руб.</div>
+                    </a>
+                  </div>
+                  <div class="mix catalog__content-item pano dekor" data-price="700" data-rate="4">
+                      <a href="single-product.html">
+                      <div class="item-img">
+                        <img src="img/product1.jpg" alt="" />
+
+                        <div class="item-img-shape">
+                          <img src="img/Shape.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="item-title"><h3>Название товара</h3></div>
+                      <div class="item-price">700 руб.</div>
+                    </a>
+                  </div>
+                  <div class="mix catalog__content-item novdekor dekor" data-price="300" data-rate="2">
+                      <a href="single-product.html">
+                      <div class="item-img">
+                        <img src="img/product4.jpg" alt="" />
+
+                        <div class="item-img-shape">
+                          <img src="img/Shape.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="item-title"><h3>Название товара</h3></div>
+                      <div class="item-price">300 руб.</div>
+                    </a>
+                  </div>
+                  <div class="mix catalog__content-item hranen dekor" data-price="200" data-rate="5">
+                      <a href="single-product.html">
+                      <div class="item-img">
+                        <img src="img/product2.jpg" alt="" />
+
+                        <div class="item-img-shape">
+                          <img src="img/Shape.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="item-title"><h3>Название товара</h3></div>
+                      <div class="item-price">200 руб.</div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Скрытая форма обратной связи -->
+        <section class="contact form_toggle">
+          <div class="gr_container contact-wrap">
+            <div class="contact__img">
+              <img src="img/contact__img.jpg" alt="Фото на форме" />
+            </div>
+            <div class="contact__form">
+              <div class="contact__form-toggle close"></div>
+              <h2 class="contact__form-title">Есть вопросы? Пишите!</h2>
+              <p class="contact__form-text">
+                Заполните поля ниже для получения обратной связи:
+              </p>
+              <form class="main-form" action="#" name="main-form">
+                <input type="text" placeholder="Имя" />
+                <input type="email" placeholder="Электронная почта" />
+                <input type="tel" placeholder="Телефон" />
+                <textarea
+                  id="#"
+                  cols="30"
+                  rows="5"
+                  placeholder="Ваше сообщение"
+                ></textarea>
+                <button type="submit" class="btn btn-wp close">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- END main -->
+
+      <!-- Подвал сайта -->
+      <footer class="footer gr_container">
+        <div class="footer__wrap-left">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <a class="footer__contacts-tel" href="tel:+79062174804"
+              >8-906-217-48-04</a
+            >
+            <a class="footer__contacts-mail" href="mailto:gronat2020@yandex.ru"
+              >gronat2020@yandex.ru</a
+            >
+          </div>
+          <div class="footer__about">
+            <h3 class="footer__title">О нас</h3>
+            <a class="footer__about-link" href="about-us.html">Кто мы?</a>
+            <a class="footer__about-link" href="delivery.html">Доставка</a>
+          </div>
+        </div>
+        <div class="footer__wrap-soc">
+          <a href="#" class="footer-soc"
+            ><img src="img/VK.svg" alt="ВКонтакте"
+          /></a>
+          <a href="#" class="footer-soc"
+            ><img src="img/YouTube.svg" alt="YouTube"
+          /></a>
+          <a href="#" class="footer-soc"
+            ><img src="img/Telegram.svg" alt="Telegram"
+          /></a>
+        </div>
+      </footer>
+
+      <!-- END Подвал сайта -->
+    </div>
+
+    <script src="js/jQuery.v3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
